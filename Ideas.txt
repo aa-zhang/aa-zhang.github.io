@@ -1,0 +1,12 @@
+About me
+Projects School and Hackathon
+	- description and made 
+	- sidebar dropdown
+Volunteering
+
+hide sidebar if certain screen width
+sticky sidebar
+
+fade black on scroll down 
+
+circle grow
