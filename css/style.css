@@ -7,6 +7,10 @@ body{
 h3{
 	text-align: center;
 }
+
+.row{
+	margin-bottom: 20px;
+}
 /* SHOWCASE */
 #showcase{
 	background-image: url('../images/showcase.jpg');
@@ -21,15 +25,14 @@ h3{
 	position: relative;
 }
 
-.slideUp{
-	animation-name: up;
-    animation-duration: 1s;
-    position: relative;
-}
-
-@keyframes up {
-    0%   {top:20px;}
-    100% {top:200px;}
+.headerOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0);
+	opacity: 0;
 }
 
 #circle{

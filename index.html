@@ -12,6 +12,7 @@
 	<script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/opacity.js"></script>
 	<script>
 	  	new WOW().init();
 	 </script>
@@ -19,19 +20,21 @@
 </head>
 <body>
 	<div id="showcase" class="shadow">
-		<div id="circle" class="wow zoomIn" data-wow-delay="0.3s">
-			<div id="showcaseText">
-				<h1 class="wow rollIn" data-wow-delay="0.5s">Hey There!</h1>
-				<h2 class="wow fadeIn" data-wow-delay="0.8s">I'm <span class="name">Aaron Zhang</span></h2>
+		
+			<div id="circle" class="wow zoomIn" data-wow-delay="0.3s">
+				<div id="showcaseText">
+					<h1 class="wow rollIn" data-wow-delay="0.5s">Hey There!</h1>
+					<h2 class="wow fadeIn" data-wow-delay="0.8s">I'm <span class="name">Aaron Zhang</span></h2>
+				</div>
 			</div>
-		</div>
+		<div class="headerOverlay"></div>
 	</div>
 
 
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 wow fadeIn">
+			<div class="col-md-8 wow fadeIn" data-wow-delay="0.5s">
 				<h2>A Little About Me!</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -41,10 +44,10 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 			<div class="col-md-4">
-				<img src="images/profile.jpg" id="me" class="wow bounceInRight" data-wow-duration="2s">
+				<img src="images/profile.jpg" id="me" class="wow rotateInDownRight" data-wow-duration="1s">
 			</div>
 		</div>
-		<div class="wow fadeIn">
+		<div class="wow fadeIn" data-wow-delay="0.5s">
 			<h2>My Projects</h2>
 			<h3>Hackathons</h3>
 			<hr>
@@ -84,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wow fadeIn">
+		<div class="wow fadeIn" data-wow-delay="0.5s">
 			<h3>School/Personal</h3>
 			<hr>
 		</div>
@@ -124,7 +127,7 @@
 			</div>
 		</div>
 		
-		<div class="wow fadeIn">
+		<div class="wow fadeIn" data-wow-delay="0.5s">
 			<h2>Volunteering Experience</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -133,7 +136,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-		<div class="wow fadeIn">
+		<div class="wow fadeIn" data-wow-delay="0.5s">
 			<h2>Contact</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
