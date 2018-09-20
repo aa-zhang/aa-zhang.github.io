@@ -2,176 +2,147 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <script src="js/main.js"></script>
+	<script href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script>
+	  	new WOW().init();
+	 </script>
 	<title>Aaron Zhang</title>
 </head>
 <body>
-	<div id="showcase">
-		<div id="circle" class="w3-animate-zoom">
-			<h1 class="title is-1 slideUp">Hey There!</h1>
-			<h2 class="subtitle is-2 w3-animate-opacity">I'm Aaron Zhang</h2>
+	<div id="showcase" class="shadow">
+		<div id="circle" class="animated zoomIn">
+			<div id="showcaseText">
+				<h1 class="animated rollIn">Hey There!</h1>
+				<h2 class="animated fadeIn">I'm <span class="name">Aaron Zhang</span></h2>
+			</div>
 		</div>
 	</div>
 
-	<div class="container" id="mainBody">
-		<div class="columns">
-			<span id="openNav">&#9776;</span>
-			<div class="column is-3">
-				<div class="box" id="sideNav">
-					<span id="closeNav">&times;</span>
-				    <p class="menu-label">General</p>
-				    <ul class="menu-list">
-				    	<li><a>About Me</a></li>
-				    </ul>
 
-				  	<p class="menu-label">Projects</p>
-				    <ul class="menu-list">
-				    	<li><a>Hackathons</a>
-					      	<ul>
-						        <li><a>Snowday Alarm</a></li>
-						        <li><a>QuickMeds</a></li>
-						        <li><a>Hack the North</a></li>
-						    </ul>
-						</li>
-					    <li><a>School/Side</a>
-					      	<ul>
-						        <li><a>Coding Buddies</a></li>
-						        <li><a>Pygame</a></li>
-						        <li><a>Minesweeper</a></li>
-						    </ul>
-						</li>
-				    </ul>
 
-					<p class="menu-label">Volunteering</p>
-					<ul class="menu-list">
-						<li><a>Vacation Bible School (VBS)</a></li>
-						<li><a>Hallelujah Party</a></li>
-						<li><a>Coding Buddies</a></li>
-					</ul>
-
-					<p class="menu-label">Contact</p>
-					<ul class="menu-list">
-						<li><a>Email</a></li>
-						<li><a>Phone</a></li>
-						<li><a>Github</a></li>
-					</ul>
-				</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 wow fadeIn">
+				<h2>A Little About Me!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class="column" id="pageBody">
-				<div class="block columns">
-					<div class="column is-8">
-						<h2 class="is-2">Some Things To Know About Me!</h2>
+			<div class="col-md-4">
+				<img src="images/profile.jpg" id="me" class="wow bounceInRight" data-wow-duration="2s">
+			</div>
+		</div>
+		<div class="wow fadeIn">
+			<h2>My Projects</h2>
+			<h3>Hackathons</h3>
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/CodingBuddies" target="_blank">
+						<img src="images/hammer.jpg" class="img-fluid">
+						<h4>Snow Day Alarm</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="column">
-						<img src="images/profile.jpg" id="me">
-					</div>
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
 				</div>
-				<div class="block">
-					<h2 class="is-2">What I've Made</h2>
-					<h3 class="is-3 has-text-centered">Hackathon Projects</h3>
-					<hr>
-					<div class="columns projectSection">
-						<section class="column project box">
-							<a href="https://github.com/AaronZhang314/Hack-the-Hammer" target="_blank">
-								<img src="images/hammer.jpg" class="projectImg">
-							</a>
-							<h4 class="is-4">Snow Day Alarm</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-						<section class="column project box">
-							<a href="https://github.com/AaronZhang314/QuickMeds" target="_blank">
-								<img src="images/wolf.png" class="projectImg whiteSpace">
-							</a>
-							<h4 class="is-4">QuickMeds</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-						<section class="column project box">
-							<a href="">
-								<img src="images/north.png" class="projectImg whiteSpace">
-							</a>
-							<h4 class="is-4">Something</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-					</div>
-					<h3 class="is-3 has-text-centered">School/Personal Projects</h3>
-					<hr>
-					<div class="columns projectSection">
-						<section class="column project box">
-							<a href="https://github.com/AaronZhang314/CodingBuddies" target="_blank"">
-								<img src="images/coding.png" class="projectImg">
-							</a>
-							<h4 class="is-4">Coding Buddies</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-						<section class="column project box">
-							<a href="https://github.com/AaronZhang314/ShapeFriends-Pygame" target="_blank">
-								<img src="images/jump.png" class="projectImg">
-							</a>
-							<h4 class="is-4">Shape Friends Pygame</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-						<section class="column project box">
-							<a href="https://github.com/AaronZhang314/ICS-3UO-Project" target="_blank">
-								<img src="images/minesweeper.jpg" class="projectImg">
-							</a>
-							<h4 class="is-4">Minesweeper (C++)</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						</section>
-					</div>
-
-					
+			</div>
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/ShapeFriends-Pygame" target="_blank">
+						<img src="images/wolf.png" class="img-fluid">
+						<h4>QuickMeds</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
 				</div>
-				<div class="block">
-					<h2 class="is-2">Volunteering Experience</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<div class="block">
-					<h2 class="is-2">Contact</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<div class="block">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/ICS-3UO-Project" target="_blank">
+						<img src="images/north.png" class="img-fluid">
+						<h4>XChange</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div style="margin-top:300px"></div>
+		<div class="wow fadeIn">
+			<h3>School/Personal</h3>
+			<hr>
+		</div>
+		<div class="row"> 
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/CodingBuddies" target="_blank"">
+						<img src="images/coding.png" class="img-fluid">
+						<h4>Coding Buddies</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
+				</div>
+			</div> 
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/ShapeFriends-Pygame" target="_blank">
+						<img src="images/jump.png" class="img-fluid">
+						<h4>Shape Friends Pygame</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+				<div class="project shadow">
+					<a href="https://github.com/AaronZhang314/ICS-3UO-Project" target="_blank">
+						<img src="images/minesweeper.jpg" class="img-fluid">
+						<h4>Minesweeper (C++)</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					</a>
+				</div>
+			</div>
+		</div>
+			
+		<h2>Volunteering Experience</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<h2>Contact</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<div style="margin-top:1000px"></div>
 	</div>
 
-	<script src="js/main.js"></script>
+	
 </body>
 </html>

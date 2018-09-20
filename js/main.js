@@ -2,6 +2,8 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
+new WOW().init(); 
+
 
 window.onscroll = function() {navStick()};
 

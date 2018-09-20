@@ -1,4 +1,12 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
 
+h3{
+	text-align: center;
+}
 /* SHOWCASE */
 #showcase{
 	background-image: url('../images/showcase.jpg');
@@ -6,20 +14,11 @@
     background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 800px;
+	min-height: 100vh;
 	text-align: center;
-	padding-top: 50px;
 	margin-bottom: 50px;
-}
-
-#showcase h1{
-	font-size: 75px;
-	top:200px;
-}
-
-#showcase h2{
-	font-size: 50px;
-	top: 300px;
+	padding-top: 10vh;
+	position: relative;
 }
 
 .slideUp{
@@ -35,117 +34,65 @@
 
 #circle{
 	background-color: rgba(255, 255, 255, 0.5);
-	height: 600px;
-	width: 600px;
-	border-radius: 300px;
+	position: relative;
+	width: 70vh;
+	max-width: 100vw;
+	max-height: 100vw;
+	height: 70vh;
+	border-radius: 50%;
 	margin: 0 auto;
 	border: solid;
-	border-width: 5px;
+	border-width: 2%;
 	border-color: rgb(255, 255, 255);
-}
-
-#circle .subtitle{
-	top:250px;
-	position: relative;
-}
-
-/* SIDENAV */
-#sideNav{
-	display: block;
-}
-
-#openNav{
-    display: none;
-}	
-
-#closeNav{
-	display: none;
-}
-
-#sideNav{
-	border: solid #e5e5e5;
-	border-width: 1px;
-}
-@media (max-width: 768px) {
-    #sideNav {
-        display: none;
-    }
-    #openNav{
-    	display: inline;
-    	cursor: pointer;
-    }
-    #closeNav{
-    	cursor: pointer;
-    	display: none;
-    }
-    .sticky {
-		position: fixed;
-		top: 10px;
-		width: 80%;
-	}
-}
-
-@media (max-width: 1000px){
-	#sideNav {
-		margin-left: 10px;
-	}
-}
-
-.sticky {
-	position: fixed;
-	top: 10px;
-	width: 20.95%;
+	padding-top: 20vh;
+	vertical-align: middle;
 }
 
 
-/* MAIN BODY */
-@media (max-width: 768px){
-	#mainBody{
-		padding: 0 40px;
-	}
+#showcaseText h1{
+	font-size: 9vh;
+	padding-bottom: 4vh;
 }
 
-#mainBody{
-	margin: 20px;
+#showcaseText h2{
+	font-size: 6vh;
+}
+
+.name{
+	color: #225ebf;
 }
 
 /*ABOUT ME*/
 
 #me{
 	height: auto;
-	width: 300px;
-	border-radius: 0px 150px 150px 150px;
+	width: 100%;
+	border-radius: 0px 50% 50% 50%;
 	margin-left: 15px;
 }
 
 /* PROJECTS */
 
 .project{
+	transition: transform .3s;
+	text-align:center;
+	padding: 10px 30px;	
+	margin: 20px 0;
 	border: solid #999999;
 	border-width: 2px;
 	border-radius: 25px;
-	height: 200px;
-	margin: 5px 20px;
-	margin-bottom: 300px;
-	transition: transform .3s;
-	padding: 0;
-	display: inline;
 }
 
+.project a{
+	color: black;
+	text-decoration: none;
+}
+.project h4{
+	margin-top:10px;
+}
 .project:hover{
 	transform: scale(1.1);
 	cursor: pointer;
 }
 
-.projectImg{
-	width: auto;
-	height: 100%;
-	border-radius: 24px;
-	display: block;
-	margin: 0 auto;
-}
 
-.whiteSpace{
-	margin: 1px auto;
-	height: 99%;
-}
