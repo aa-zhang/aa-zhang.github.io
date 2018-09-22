@@ -8,6 +8,31 @@ h3{
 	text-align: center;
 }
 
+.headerLine{
+	display: block;
+    height: 1px;
+    border: 0;
+    width: 20vw;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.blueHr{
+	border-top: 7px solid #4374c1;
+}
+
+.redHr{
+	border-top: 7px solid #8c1d1d;
+}
+
+.greenHr{
+	border-top: 7px solid #2c662d;
+}
+
+.orangeHr{
+	border-top: 7px solid #ef5e00;
+}
+
 .row{
 	margin-bottom: 20px;
 }
@@ -61,8 +86,25 @@ h3{
 	font-size: 6vh;
 }
 
+.icons a{
+	text-decoration: none;
+}
+
+.icons{
+	margin-top: 40px;
+}
+
 .name{
 	color: #225ebf;
+}
+
+.nameHr{
+	width: 50%;
+	border-top: 2px solid #686868;
+}
+
+.icon{
+	margin: 10px;
 }
 
 /*ABOUT ME*/
@@ -98,6 +140,16 @@ h3{
 	cursor: pointer;
 }
 
+/* CONTACT */
+#email{
+	width: 20%;
+}
+
+.phone{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
 
 
 /* FOOTER */
