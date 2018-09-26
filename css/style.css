@@ -123,8 +123,8 @@ h3{
 	text-align:center;
 	padding: 10px 30px;	
 	margin: 20px 0;
-	border: solid #e5e5e5;
-	border-width: 2px;
+	border: solid white;
+	border-width: 1px;
 	border-radius: 25px;
 }
 
@@ -138,6 +138,7 @@ h3{
 .project:hover{
 	transform: scale(1.1);
 	cursor: pointer;
+	border-color: #66a3ff;
 }
 
 /* CONTACT */
