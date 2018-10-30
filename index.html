@@ -7,19 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <script src="js/main.js"></script>
-    <script src="js/copyClipboard.js"></script>
-	<script href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
-	
+
 	<script>
 	  	new WOW().init();
 	 </script>
 	<title>Aaron Zhang</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#sideNav" data-offset="50">
 	<div id="showcase">
 		<div id="circle" class="wow zoomIn" data-wow-delay="0.3s">
 			<div id="showcaseText">
@@ -38,117 +39,159 @@
 		</div>
 	</div>
 
+	<!--Working on side nav -->
 
 	<div class="container-fluid main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 wow fadeIn" data-wow-delay="0.5s">
-					<h2>A Little About Me!</h2>
-					<hr class="headerLine blueHr wow slideInLeft">
-					<p>Hi, I am Aaron Zhang! Currently I am a Grade 12 student attending Glenforest Secondary School. I like to do stuff.</p>
-				</div>
-				<div class="col-md-4">
-					<img src="images/profile.jpg" id="me" class="wow rotateInDownRight shadow" data-wow-duration="1s">
-				</div>
-			</div>
-			<div class="wow fadeIn" data-wow-delay="0.5s">
-				<h2>My Projects</h2>
-				<hr class="headerLine redHr wow slideInLeft">
-				<h3>Hackathons</h3>
-				<hr>
-			</div>
-			<div class="row">
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
-					<div class="project shadow">
-						<a href="https://devpost.com/software/xchange-agjw38" target="_blank">
-							<img src="images/north.png" class="img-fluid">
-							<hr>
-							<h4>XChange</h4>
-							<p>A website helps travelers to track their budget by converting any currency into their native currency and locates best exchange station rates in the area using crowd-sourced data.</p>
-						</a>
+		<div class="row">
+			<nav id="sideNav" class="col-lg-2">
+		      <ul class="nav nav-pills flex-column">
+		        <li class="nav-item">
+		          <a id="navGeneral" class="nav-link" href="#general">General</a>
+		        </li>
+		        <li class="nav-item">
+		          <a id="navProjects" class="nav-link" href="#projects">Projects</a>
+		        </li>
+		        <li class="nav-item">
+		          <a id="navVolunteer" class="nav-link" href="#volunteer">Volunteering</a>
+		        </li>
+		        <li class="nav-item">
+		          <a id="navMore" class="nav-link" href="#more">More Info</a>
+		        </li>
+		      </ul>
+		    </nav>
+		    <div class="col-md-10">
+				<div id="textBody" class="container">
+					<div id="general" class="row">
+						<div class="col-md-8 wow fadeIn" data-wow-delay="0.5s">
+							<h2>A Little About Me!</h2>
+							<hr class="headerLine blueHr wow slideInLeft">
+							<p>Hi, I am Aaron Zhang! Currently I am a Grade 12 student attending Glenforest Secondary School. I like to do stuff.</p>
+							<h4>Grocery List</h4>
+							<ul>
+								<li>Bananana - to make smoothies</li>
+								<li>Sushi - my favourite</li>
+								<li>Sharujan</li>
+								<li>More filler text to see if format is nice</li>
+							</ul>
+							<!--
+							<h4>Music</h4>
+							<p>I love playing the piano and have been playing since I was 8. I have taken a number of the higher level RCM examinations and competed in a few music festivals</p>
+							<ul>
+								<li>Level 6 - First Class Honors</li>
+								<li>Level 8 - First Class Honors</li>
+								<li>Level 8 Peel Music Festival - 2nd and 3rd Place</li>
+								<li>Level 10 - Honors</li>
+							</ul>
+							<p>I have also played the alto saxophone starting grade 6 and have played in Dolphin Senior Public School's junior/senior band and stage band and Glenforest Secondary School's Wind Ensemble.</p>
+							-->
+						</div>
+						<div class="col-md-4">
+							<img src="images/profile.jpg" id="me" class="wow rotateInDownRight shadow" data-wow-duration="1s">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
-					<div class="project shadow">
-						<a href="https://devpost.com/software/snow-day-alarm" target="_blank">
-							<img src="images/hammer.jpg" class="img-fluid">
-							<hr>
-							<h4>Snow Day Alarm</h4>
-							<p>An alarm that checks the school region's live twitter and automatically disables your alarm on snowdays!</p>
-						</a>
+					<div id="projects" class="wow fadeIn" data-wow-delay="0.5s">
+						<h2>My Projects</h2>
+						<hr class="headerLine redHr wow slideInLeft">
+						<h3>Hackathons</h3>
+						<hr>
 					</div>
-				</div>
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
-					<div class="project shadow">
-						<a href="https://devpost.com/software/quick-meds" target="_blank">
-							<img src="images/wolf.png" class="img-fluid">
-							<hr>
-							<h4>QuickMeds</h4>
-							<p>An experimental concept of providing a smarter and more efficient way to contact with emergency medical services in extreme situations.</p>
-						</a>
+					<div class="row">
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
+							<div class="project shadow">
+								<a href="https://devpost.com/software/xchange-agjw38" target="_blank">
+									<img src="images/north.png" class="img-fluid">
+									<hr>
+									<h4>XChange</h4>
+									<p>A website helps travelers to track their budget by converting any currency into their native currency and locates best exchange station rates in the area using crowd-sourced data.</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
+							<div class="project shadow">
+								<a href="https://devpost.com/software/snow-day-alarm" target="_blank">
+									<img src="images/hammer.jpg" class="img-fluid">
+									<hr>
+									<h4>Snow Day Alarm</h4>
+									<p>An alarm that checks the school region's live twitter and automatically disables your alarm on snowdays!</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+							<div class="project shadow">
+								<a href="https://devpost.com/software/quick-meds" target="_blank">
+									<img src="images/wolf.png" class="img-fluid">
+									<hr>
+									<h4>QuickMeds</h4>
+									<p>An experimental concept of providing a smarter and more efficient way to contact with emergency medical services in extreme situations.</p>
+								</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="wow fadeIn" data-wow-delay="0.5s">
-				<h3>School/Personal</h3>
-				<hr>
-			</div>
-			<div class="row"> 
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
-					<div class="project shadow">
-						<a href="https://github.com/AaronZhang314/CodingBuddies" target="_blank"">
-							<img src="images/coding.png" class="img-fluid">
-							<hr>
-							<h4>Coding Buddies</h4>
-							<p>A learning resource that teaches Python for younger programmers.</p>
-						</a>
+					<div class="wow fadeIn" data-wow-delay="0.5s">
+						<h3>School/Personal</h3>
+						<hr>
 					</div>
-				</div> 
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
-					<div class="project shadow">
-						<a href="https://github.com/AaronZhang314/ShapeFriends-Pygame" target="_blank">
-							<img src="images/jump.png" class="img-fluid">
-							<hr>
-							<h4>Shape Friends Pygame</h4>
-							<p>A platformer made in Pygame (Python) where you go on an adventure to rescue you kidnapped friends!</p>
-						</a>
+					<div class="row"> 
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.2s">
+							<div class="project shadow">
+								<a href="https://github.com/AaronZhang314/CodingBuddies" target="_blank"">
+									<img src="images/coding.png" class="img-fluid">
+									<hr>
+									<h4>Coding Buddies</h4>
+									<p>A learning resource that teaches Python for younger programmers.</p>
+								</a>
+							</div>
+						</div> 
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.4s">
+							<div class="project shadow">
+								<a href="https://github.com/AaronZhang314/ShapeFriends-Pygame" target="_blank">
+									<img src="images/jump.png" class="img-fluid">
+									<hr>
+									<h4>Shape Friends Pygame</h4>
+									<p>A platformer made in Pygame (Python) where you go on an adventure to rescue your kidnapped friends!</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+							<div class="project shadow">
+								<a href="https://github.com/AaronZhang314/ICS-3UO-Project" target="_blank">
+									<img src="images/minesweeper.jpg" class="img-fluid">
+									<hr>
+									<h4>Minesweeper (C++)</h4>
+									<p>A recreation of the classic game, Minesweeper, played in the C++ console.</p>
+								</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
-					<div class="project shadow">
-						<a href="https://github.com/AaronZhang314/ICS-3UO-Project" target="_blank">
-							<img src="images/minesweeper.jpg" class="img-fluid">
-							<hr>
-							<h4>Minesweeper (C++)</h4>
-							<p>A recreation of the classic game, Minesweeper, played in the C++ console.</p>
-						</a>
+					
+					<div id="volunteer" class="wow fadeIn" data-wow-delay="0.5s">
+						<h2>Volunteering</h2>
+						<hr class="headerLine orangeHr wow slideInLeft">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 					</div>
-				</div>
-			</div>
-			
-			<div class="wow fadeIn" data-wow-delay="0.5s">
-				<h2>Volunteering</h2>
-				<hr class="headerLine orangeHr wow slideInLeft">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="wow fadeIn" data-wow-delay="0.5s">
-				<h2>Contact</h2>
-				<hr class="headerLine greenHr wow slideInLeft">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div style="margin-bottom: 300px">
+					</div>
+					<div id="more" class="wow fadeIn" data-wow-delay="0.5s">
+						<h2>More Information</h2>
+						<hr class="headerLine greenHr wow slideInLeft">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+					</div>
+				</div>
 			</div>
-
 		</div>
+	</div>
+	<div style="padding-bottom: 500px">
 	</div>
 	<footer class="container copyright">
     	<hr>

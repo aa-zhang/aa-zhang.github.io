@@ -1,8 +1,9 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	position: relative;
 }
 
 h3{
@@ -42,6 +43,19 @@ h3{
 	padding-top: 50px;
 	
 }
+
+
+
+/* NAVIGATION BAR */
+.nav-pills {
+	position: sticky;
+	top: 35px;
+	padding-right: 30px;
+	display: block;
+}
+
+
+
 
 /* SHOWCASE */
 #showcase{
