@@ -191,5 +191,10 @@ h3{
 /* FOOTER */
 .copyright{
 	text-align:center;
+}
+
+#imageLink{
 	color: white;
+	font-size: 12px;
+	text-decoration: underline;
 }
