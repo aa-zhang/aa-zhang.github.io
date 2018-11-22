@@ -4,6 +4,12 @@ body{
 	overflow-x: hidden;
 	overflow-y: scroll;
 	position: relative;
+	background-image: url('../images/showcase2	.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+
 }
 
 h3{
@@ -41,9 +47,13 @@ h3{
 
 .main{
 	padding-top: 50px;
+	background-color: rgba(1, 2, 7, 0.7);
 	
 }
 
+#textBody{
+	color:white;
+}
 
 
 /* NAVIGATION BAR */
@@ -59,11 +69,7 @@ h3{
 
 /* SHOWCASE */
 #showcase{
-	background-image: url('../images/showcase.jpg');
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	background-size: cover;
+	
 	min-height: 100vh;
 	text-align: center;
 	padding-top: 10vh;
@@ -149,7 +155,7 @@ h3{
 }
 
 .project a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 .project h4{
@@ -176,4 +182,5 @@ h3{
 /* FOOTER */
 .copyright{
 	text-align:center;
+	color: white;
 }
