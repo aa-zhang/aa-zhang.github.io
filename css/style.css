@@ -154,6 +154,13 @@ h3{
 
 /* PROJECTS */
 
+.colEqualHeight{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .project{
 	transition: transform .3s;
 	text-align:center;
@@ -176,6 +183,13 @@ h3{
 	cursor: pointer;
 	border-color: #66a3ff;
 }
+
+/* VOLUNTEERING */
+.sideBySide{
+  display: inline-block;
+}
+
+
 
 /* CONTACT */
 #email{
